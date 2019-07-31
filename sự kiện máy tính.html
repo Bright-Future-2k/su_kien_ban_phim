@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="lenhDiChuyen()">
+<img id="nobita" src="nobita_picture.png" style="position: absolute;left: 0;top: 0" height="200" width="180"/>
+<script>
+function goUp(){
+    let nhanVat = document.getElementById("nobita");
+    nhanVat.style.top = parseInt(nhanVat.style.top) - 10 +"px";
+}
+function goDown() {
+    let nhanVat = document.getElementById("nobita");
+    nhanVat.style.top = parseInt(nhanVat.style.top) + 10 + "px";
+}
+function goLeft() {
+    let nhanVat = document.getElementById("nobita");
+    nhanVat.style.left = parseInt(nhanVat.style.left) - 10 + "px";
+}
+function goRight() {
+    let nhanVat = document.getElementById("nobita");
+    nhanVat.style.left = parseInt(nhanVat.style.left) + 10 + "px";
+}
+function moveSelect(evt) {
+    switch (evt.keyCode){
+        case 37:
+            goLeft();
+            break;
+        case 38:
+            goUp();
+            break;
+        case 39:("keyd
+            goRight();
+            break;
+        case 40:
+            goDown();
+            break;
+    }
+}
+function lenhDiChuyen() {
+    window.addEventListenerown",moveSelect);
+}
+</script>
+</body>
+</html>
